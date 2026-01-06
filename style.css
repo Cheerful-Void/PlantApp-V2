@@ -1,13 +1,19 @@
+body {
+  background: #f5f5f5;
+}
+
 .row {
-  display: flex;
-  flex-wrap: wrap;     /* allows wrapping on smaller screens */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
 
 .column {
-  flex: 1 1 25%;       /* 4 columns on large screens */
-  min-width: 200px;    /* prevents columns from getting too small */
-  height: 150px;
-  background-color: lightblue;
-  border: 1px solid black;
-  box-sizing: border-box;
+  height: 100px;
+  background: red;
+  color: white;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
