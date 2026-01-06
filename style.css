@@ -1,11 +1,13 @@
-.column {
-  float: left;
-  width: 25%;
+.row {
+  display: flex;
+  flex-wrap: wrap;     /* allows wrapping on smaller screens */
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.column {
+  flex: 1 1 25%;       /* 4 columns on large screens */
+  min-width: 200px;    /* prevents columns from getting too small */
+  height: 150px;
+  background-color: lightblue;
+  border: 1px solid black;
+  box-sizing: border-box;
 }
